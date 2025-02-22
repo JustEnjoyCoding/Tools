@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileMaster - Online File Tools</title>
+    <meta name="description" content="Free online tools for images and PDFs. Convert, compress, edit, and optimize your files instantly.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --secondary: #6366F1;
+            --dark: #1F2937;
+            --light: #F9FAFB;
+            --gray: #6B7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 50px;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            border-radius: 50px;
+        }
+
+        /* Tools Grid */
+        .tools-grid {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Categories */
+        .categories {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .category-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">FileMaster</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#tools">Tools</a>
+                <a href="#pricing">Pricing</a>
+                <button class="btn">Sign In</button>
+                <button class="btn primary">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Transform Your Files in Seconds</h1>
+        <p>Free online tools for images, PDFs, and documents</p>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search tools...">
+            <button class="btn primary"><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="category-grid">
+            <div class="category-card">
+                <i class="tool-icon fas fa-file-pdf"></i>
+                <h3>PDF Tools</h3>
+                <p>Convert, merge, split, and compress PDFs</p>
+            </div>
+            <div class="category-card">
+                <i class="tool-icon fas fa-image"></i>
+                <h3>Image Tools</h3>
+                <p>Compress, convert, and edit images</p>
+            </div>
+            <div class="category-card">
+                <i class="tool-icon fas fa-file-alt"></i>
+                <h3>Document Tools</h3>
+                <p>Word, Excel, PowerPoint tools</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-grid" id="tools">
+
+        
+     <a href="/img-compress.html" class="tool-card">
+    <div>
+        <i class="tool-icon fas fa-compress"></i>
+        <h3>Image Compressor</h3>
+        <p>Reduce image file size without quality loss</p>
+    </div>
+</a>
+
+
+        
+        <div class="tool-card">
+            <i class="tool-icon fas fa-file-pdf"></i>
+            <h3>PDF Merger</h3>
+            <p>Combine multiple PDF files into one</p>
+        </div>
+        <div class="tool-card">
+            <i class="tool-icon fas fa-file-image"></i>
+            <h3>Image Converter</h3>
+            <p>Convert between JPG, PNG, WEBP formats</p>
+        </div>
+        <div class="tool-card">
+            <i class="tool-icon fas fa-lock"></i>
+            <h3>PDF Protect</h3>
+            <p>Add passwords to PDF documents</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>FileMaster</h4>
+                <p>Your all-in-one file solution platform</p>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <a href="#">PDF Tools</a>
+                <a href="#">Image Tools</a>
+                <a href="#">Document Tools</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
